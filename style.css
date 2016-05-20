@@ -1,0 +1,35 @@
+#myGameWorld {
+	background: black;
+}
+
+.slider {
+	margin: 20px;
+	max-width: 100%;
+}
+
+.slider_label {
+	margin-bottom: 10px;
+	font-size: 1.5em;
+}
+
+#zoom_note {
+	font-size: 1.7em;
+	margin-left: 20px;
+}
+
+#radio_buttons {
+	font-size: 1.5em;
+	clear: both;
+	margin-left: 20px;
+}
+
+input[type = radio] {
+    border: 0px;
+    width: 2%;
+    height: 2em;
+}
+
+li {
+	float: left;
+	list-style: none;
+}

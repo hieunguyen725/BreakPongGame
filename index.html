@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Break-Pong!</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+	<link rel="stylesheet" href="jquery-ui-slider-pips.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ball speed slider-->	
+	<ul>
+		<li>
+			<div class="slider">
+				<p class="slider_label" id="ball_slider_label" for="ball_speed_slider">Current ball speed</p>
+				<div id="ball_speed_slider"></div>
+			</div>
+		</li>
+
+		<li>
+			<div class="slider">
+				<p class="slider_label" id="paddle_slider_label" for="paddle_speed_slider">Current paddle speed</p>
+				<div id="paddle_speed_slider"></div>
+			</div>
+		</li>
+
+		<li>
+			<div class="slider">
+				<p class="slider_label" id="brick_slider_label" for="brick_speed_slider">Current bricks speed</p>
+				<div id="brick_speed_slider"></div>
+			</div>
+		</li>
+	</ul>
+
+<!-- 	<div style="clear: both"></div>
+ -->
+	<div id="radio_buttons">
+		<label><input type="radio" name="myRadioButtons" onclick="radioChange(this);" value="1" checked="checked"/>AI Only</label>
+		<label><input type="radio" name="myRadioButtons" onclick="radioChange(this);" value="0" />I want to play (Right and Left Arrow)</label>
+	</div>
+    <p id="zoom_note">Note: You might need to zoom-in or zoom-out your screen to see all the components</p>
+    <canvas id="myGameWorld" tabindex="1" width="1400" height="900"></canvas>
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="jquery-ui-slider-pips.js"></script>
+    <script type="text/javascript" src="./gameengine.js"></script>
+	<script type="text/javascript" src="./main.js"></script>
+	<script type="text/javascript" src="./settinghandler.js"></script>
+</body>
+</html>
